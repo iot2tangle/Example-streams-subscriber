@@ -1,0 +1,23 @@
+[package]
+name = "streams-example-subscriber"
+version = "0.1.0"
+authors = ["AleBuser <alebuser.98@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "local"
+path = "src/lib.rs"
+
+[dependencies]
+failure = "0.1.7"
+anyhow = { version = "1.0", default-features = false }
+iota-streams = { git = "https://github.com/iotaledger/streams", rev = "456347a"}
+iota-core = { git = "https://github.com/iotaledger/iota.rs", rev = "74fa529" }
+serde = {version="1.0.110", features = ["derive"] }
+serde_derive = "1.0.110"
+serde_json = "1.0.53"
+tokio = {version = "0.2.18", features = ["macros"]}
+rand = "0.7.3"
+base64 = "^0.12"
