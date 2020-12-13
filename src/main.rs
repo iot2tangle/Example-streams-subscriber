@@ -83,6 +83,6 @@ async fn main() {
         }
         public_list_len = public_list.len().clone();
         // dont spam thee node with requests!
-        thread::sleep(time::Duration::from_secs(5));
+        thread::sleep(time::Duration::from_secs(2));
     }
 }
