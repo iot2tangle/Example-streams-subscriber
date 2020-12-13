@@ -65,6 +65,7 @@ async fn main() {
         //print out a pretty pretty JSON
         println!("{} \n  \n", &data.replace("\\", ""));
     }
+    println!("Read all historic Messages! \n Reading New Messages...");
 
     // listen for new messages sent to channel
     let mut public_list_len: usize = public_list.len();
@@ -82,6 +83,6 @@ async fn main() {
         }
         public_list_len = public_list.len().clone();
         // dont spam thee node with requests!
-        thread::sleep(time::Duration::from_secs(10));
+        thread::sleep(time::Duration::from_secs(5));
     }
 }

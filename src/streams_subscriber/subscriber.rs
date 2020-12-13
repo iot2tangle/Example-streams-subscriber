@@ -3,10 +3,7 @@
 //!
 use crate::streams_subscriber::random_seed;
 
-use iota_streams::app::transport::tangle::{
-    client::Client,
-    PAYLOAD_BYTES,
-};
+use iota_streams::app::transport::tangle::{client::Client, PAYLOAD_BYTES};
 use iota_streams::app_channels::api::tangle::{Address, Subscriber};
 
 use base64::{decode_config, URL_SAFE_NO_PAD};
